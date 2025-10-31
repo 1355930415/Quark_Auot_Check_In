@@ -14,7 +14,7 @@ def get_env():
     # 判断 COOKIE_QUARK是否存在于环境变量 
     if "COOKIE_QUARK" in os.environ: 
         # 读取系统变量以 \n 或 && 分割变量 
-        cookie_list = re.split('\n|&&', os.environ.get('COOKIE_QUARK')) 
+        cookie_list = re.split('&&', os.environ.get('COOKIE_QUARK')) 
     else: 
         # 标准日志输出 
         print('❌未添加COOKIE_QUARK变量') 
